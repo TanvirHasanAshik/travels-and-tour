@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    font-family: "Work Sans", serif;
+    font-optical-sizing: auto;
+}
+
+/* Common style */
+
+:root {
+    --text-primary: rgb(186, 218, 11);
+    --btn-primary: rgba(187, 218, 11, 0.596);
+}
+
+button {
+    background-color: var(--btn-primary);
+    color: #fff;
+}
+
+/* --------------- */
+/* Header section styles */
+.header {
+    margin: 0 auto;
+    padding: 50px 100px;
+}
+
+.nav div {
+    display: flex
+}
+
+.nav>h2 {
+    font-size: 1.5rem;
+}
+
+.nav-title {
+    color: var(--text-primary);
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    align-items: center;
+}
+
+.nav ul li {
+    display: inline;
+    padding-left: 30px;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    color: goldenrod;
+    font-weight: 600;
+}
+
+.banner {
+    height: 500px;
+    background-image: url("../Images/banner.png");
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+}
+
+.banner-content {
+    width: 70%;
+    margin: auto;
+}
+
+.banner h2 {
+    padding-top: 100px;
+    margin: 0px;
+    font-size: 4rem;
+    color: #fff;
+    text-align: center;
+}
+
+.banner p {
+    font-size: 0.90rem;
+    color: #fff;
+    text-align: center;
+}
+
+
+
+.banner-form input[type="text"],
+select,
+button {
+    border: none;
+    padding: 15px 15px;
+    border-radius: 5px;
+    margin: 0 5px;
+}
+
+.banner-form {
+    margin: 0 auto;
+    text-align: center;
+    width: fit-content;
+    background-color: rgba(0, 255, 255, 0.5);
+    padding: 8px;
+    border-radius: 3px;
+}
+
+
+/* Responsive Style */
+
+@media screen and (max-width: 576px) {
+    .header {
+        padding: 20px;
+    }
+
+    .nav {
+        flex-direction: column;
+    }
+
+    .banner {
+        margin-top: 30px;
+    }
+
+    .banner h2 {
+        padding-top: 50px;
+        margin: 0px;
+        font-size: 1.5rem;
+        color: #fff;
+        text-align: center;
+    }
+
+    .banner-form {
+        margin: auto;
+        width: 80%;
+
+    }
+
+    .banner-form form {
+        padding: 15px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        /* margin-bottom: 15px; */
+    }
+
+    .banner-form form input[type="text"],
+    select,
+    button {
+        margin: 5px;
+    }
+
+    .banner-form form select>option {
+        width: 50%;
+    }
+
+}
